@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bài thực hành 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            background-color: rgb(90, 153, 127);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            float: left;
+            width: 40%;
+            height: 500px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #f1f1f1;
+            height: 550px;
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: rgb(90, 153, 127);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Menu</button>
+    <div id="demo" class="collapse">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+            <button type="button" class="btn btn-primary">Oppo</button>
+        </div>
+    </div>
+
+    <header>
+        <h2><b>BÀI THỰC HÀNH 2 </b></h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7450.539475491716!2d105.78544275189701!3d20.98182192343757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1636097059156!5m2!1svi!2s"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </ul>
+            <div class="fb-page" data-href="https://www.facebook.com/phonggiaovu" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/phonggiaovu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phonggiaovu">Phòng Giáo vụ - PTIT</a></blockquote>
+            </div>
+        </nav>
+
+        <article>
+            <h3 class="text-center"><b><i>Đăng Kí Thông Tin</i></b></h3>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="User name">User name:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="text" class="form-control" id="pwd">
+                </div>
+
+                <form>
+                    Ngày sinh: <input type="date" name="date"><br><br>
+                </form>
+
+
+
+                <label for="Nam">Giới tính:</label>
+
+
+                <label for="Nam">Nam</label>
+                <input type="radio" id="defaultCheck" name="example2">
+                <label for="Nam">Nữ </label>
+                <input type="radio" id="defaultCheck" name="example2">
+                <br>
+                <label for="Nam">Sở thích:</label>
+                <label for="Nam">Đá bóng</label> <input type="checkbox" id="defaultCheck" name="example2">
+                <label for="Nam">Đánh cầu </label> <input type="checkbox" id="defaultCheck" name="example2">
+                <label for="Nam">Nghe nhạc</label> <input type="checkbox" id="defaultCheck" name="example2">
+                <label for="Nam">Mua sắm</label> <input type="checkbox" id="defaultCheck" name="example2">
+                <br>
+                <label for="Nam">Mô tả bản thân:</label>
+                <br>
+                <textarea rows="3" cols="70">  
+                </textarea>
+                <br>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#dem">SUBMIT</button>
+
+                <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#reset">RESET</button>
+                <div id="dem" class="collapse">
+                    Đã gửi
+                </div>
+                <div id="reset" class="collapse">
+                    Reset thành công!!!
+                </div>
+
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        Nguyễn Quang Liêm - B18DCCN325
+    </footer>
+
+</body>
+
+</html>
